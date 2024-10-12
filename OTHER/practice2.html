@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Regular Expression</title>
+        <script>
+            function check()
+            {
+                var str = document.getElementById("pass").value;
+                var pat = / ^(?=.*[a-z]) (?=.*[0-9]) (?=.*[@$!%*?&]) {8,}  $ /;
+
+                if (pat.test(str)) {
+                    alert("Correct Pattern for Password");
+                }
+                else
+                {
+                    alert("Incorrect Pattern !!!");
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        Enter Passwowrd <input type="text" id="pass">
+        <input type="button" id="but" value="CHECK" onclick="check()"> 
+    </body>
+</html>

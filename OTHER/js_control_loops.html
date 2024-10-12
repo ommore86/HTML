@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <head>
+        <title>Switch Case</title>
+    </head>
+
+    <body style="background-color: aquamarine;">
+        <script>
+            function week(){
+                var day = prompt("Please Enter Your Day(number 1-7): ");
+                switch (day) {
+                    case '1': document.write("Monday<br>");
+                        break;
+            
+                    case '2': document.write("Tuesday<br>");
+                        break;
+        
+                    case '3': document.write("Wednesday<br>");
+                        break;
+        
+                    case '4': document.write("Thursday<br>");
+                        break;
+                            
+                    case '5': document.write("Friday<br>");
+                        break;
+        
+                    case '6': document.write("Saturday<br>");
+                        break;
+        
+                    case '7': document.write("Sunday<br>");
+                        break;
+        
+                    default:document.write("Invalid Input!");
+                        break;
+                }
+            }
+
+            function mark(){
+                var m1 = prompt("Enter mark 1: ");
+                var m2 = prompt("Enter mark 2: ");
+                var m3 = prompt("Enter mark 3: ");
+                var total = Number(m1) + Number(m2) + Number(m3);
+                var perc = Number(total)/3;
+                document.write("Percentage= ", perc, "%");
+                if(perc>=75){
+                    document.writeln("<br>Distinction");
+                } 
+                else if (perc>60 & perc<75){
+                    document.writeln("<br>First Class");
+                }
+                else if (perc>45 & perc <60){
+                    document.writeln("<br>Pass");
+                }
+                else{
+                    document.writeln("<br>Fail");
+                }
+            }
+
+            function greatest()
+            {
+                var a = prompt("Enter number a: ");
+                var b = prompt("Enter number b: ");
+                var c = prompt("Enter number c: ");
+                if(a>b & a>c){
+                    document.write("A is greatest = ", a);
+                }
+                else if(b>a & b>c){
+                    document.write("B is greatest = ", b);
+                }
+                else{
+                    document.write("C is greatest = ", c);
+                }
+            }
+
+            function odd(){
+                var count=1;
+                while (count<=100) {
+                    document.writeln(count);
+                    count=count+2;
+                }
+            }
+
+            function even(){
+                var count=2;
+                while (count<=100) {
+                    document.writeln(count);
+                    count=count+2;
+                }
+            }
+
+            function addition(){
+                let shouldContinue;
+                do{
+                    var num1 = Number(prompt("Enter the First Number: "));
+                    var num2 = Number(prompt("Enter the Second Number: "));
+
+                    var sum = num1 + num2;
+                    document.write("<br>The sum is: ", sum);
+
+                    shouldContinue = prompt("Do you want to perform another addition(yes/no): ").toLowerCase()==="yes";
+                }while(shouldContinue);
+            }
+
+            function five(){
+                let number=5;
+
+                for(let i=0; i<10; i++)
+                {
+                    document.writeln(number);
+                    number = number+5;
+                }
+            }
+            </script>    
+
+
+            <h3>1. Days of a Week(Switch Case)</h3>
+            <button onclick="week()">Click</button>
+            <hr><br>
+
+            <h3>2. Percentage of 3 Subjects(if-else ladder)</h3>
+            <button onclick="mark()">Click</button>
+            <hr><br>
+
+            <h3>3. Greatest of Three Numbers(if-else-if)</h3>
+            <button onclick="greatest()">Click</button>
+            <hr><br>
+
+            <h3>4. Odd Numbers From 1 to 100(While loop)</h3>
+            <button onclick="odd()">Click</button>
+            <hr><br>
+
+            <h3>5. Even Numbers From 1 to 100(While loop)</h3>
+            <button onclick="even()">Click</button>
+            <hr><br>
+
+            <h3>6. Take input as two numbers and perform addition operation on it and again ask user whether he has to perform addition operation or not(do while loop)</h3>
+            <button onclick="addition()">Click</button>
+            <hr><br>
+
+            <h3>7. Print the Sequence -> 5 10 15 20 25...n(for loop)</h3>
+            <button onclick="five()">Click</button>
+            <hr><br>
+    </body>
+</html>

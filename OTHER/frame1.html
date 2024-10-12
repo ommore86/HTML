@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function newimg()
+            {
+                document.getElementById("shipimg").src="Sceneary.png";
+            }
+
+            function oldimg()
+            {
+                document.getElementById("shipimg").src="Ship.png";
+            }
+        </script>
+    </head>
+
+    <body>
+        <h3>Frame 1</h3>
+        <img src="Ship.png" id="shipimg" height="100px" width="200px" onmouseover="newimg()" onmouseout="oldimg()"/>
+    </body>
+</html>
