@@ -1,9 +1,0 @@
-# Query: video.jpg
-# ContextLines: 1
-
-1 result - 1 file
-
-Hotel-Ville\css\style.css:
-  233      min-height: 500px;
-  234:     background: linear-gradient(rgba(15, 23, 43, .1), rgba(15, 23, 43, .1)), url(../img/videophoto.jpg);
-  235      background-position: center center;
