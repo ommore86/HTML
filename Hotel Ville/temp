@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+</head>
+<body>
+    <section class="countdown">
+        <h2>Countdown to Our Next Adventure</h2>
+        <div id="timer"></div>
+    </section>
 
+    <script>
+        // Set the date and time of your upcoming travel event
+        const eventDate = new Date('2023-12-31T00:00:00Z').getTime();
+
+        // Function to update the countdown timer
+        function updateCountdown() {
+            const currentDate = new Date().getTime();
+            const timeRemaining = eventDate - currentDate;
+
+            if (timeRemaining > 0) {
+                const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+                document.getElementById('timer').innerHTML = `
+                    <div>${days} <span>days</span></div>
+                    <div>${hours} <span>hours</span></div>
+                    <div>${minutes} <span>minutes</span></div>
+                    <div>${seconds} <span>seconds</span></div>
+                `;
+            } else {
+                document.getElementById('timer').innerHTML = 'The adventure has begun!';
+            }
+        }
+
+        // Update the countdown timer every second
+        setInterval(updateCountdown, 1000);
+
+        // Initial update
+        updateCountdown();
+    </script>
+</body>
+</html>
