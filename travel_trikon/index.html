@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Journey HTML CSS Template</title>
+    <!-- 
+Journey Template 
+http://www.templatemo.com/tm-511-journey
+-->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Bootstrap style -->
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css"> <!-- Templatemo style -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+              <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+</head>
+
+<body>
+    <div class="tm-main-content" id="top">
+        <div class="tm-top-bar-bg"></div>
+        <div class="tm-top-bar" id="tm-top-bar">
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg narbar-light">
+                        <a class="navbar-brand mr-auto" href="#">
+                            <img src="img/logo.png" alt="Site logo">
+                            Travel Trikon
+                        </a>
+                        <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse"
+                            data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#top">Home <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-2">Top Destinations</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Sign in</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-4">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- .tm-top-bar -->
+
+        <div class="tm-page-wrap mx-auto">
+            <section class="tm-banner">
+                <div class="tm-container-outer tm-banner-bg">
+                    <div class="container">
+
+                     <div class="row tm-banner-row tm-banner-row-header"> 
+                                <div class="col-xs-12">
+                                <div class="tm-banner-header">
+                                    <!-- <h6 class="text-uppercase tm-banner-title">Planning a trip?</h6> -->
+                                    <!-- <h1 class="text-uppercase tm-banner-title">Come! Let's Travel with us!</h1> -->
+                                    <h3>Planning a trip?</h3>
+                                    <h2> Let's Travel with us!</h2>
+                                    
+                                    <!-- <p><h6>EXPLORE</h6></p>
+                                    <p><h6>DISCOVER</h6></p>
+                                    <p><h6>TRAVEL</h6></p> -->
+                                    <a href="javascript:void(0)" class="tm-down-arrow-link"><i class="fa fa-2x fa-angle-down tm-down-arrow"></i></a>       
+                                </div>    
+                            </div>  <!-- col-xs-12 -->                      
+                        </div> <!-- row -->
+                        <div class="row tm-banner-row" id="tm-section-search">
+
+                            <form action="index.html" method="get" class="tm-search-form tm-section-pad-2">
+                                <div class="form-row tm-search-form-row">
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+                                        <label for="inputCity">Choose Your Destination</label>
+                                        <input name="destination" type="text" class="form-control" id="inputCity"
+                                            placeholder="Type your destination...">
+                                    </div>
+                                    <div class="form-group tm-form-group tm-form-group-1">
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
+                                            <label for="inputRoom">How many rooms?</label>
+                                            <select name="room" class="form-control tm-select" id="inputRoom">
+                                                <option value="1" selected>1 Room</option>
+                                                <option value="2">2 Rooms</option>
+                                                <option value="3">3 Rooms</option>
+                                                <option value="4">4 Rooms</option>
+                                                <option value="5">5 Rooms</option>
+                                                <option value="6">6 Rooms</option>
+                                                <option value="7">7 Rooms</option>
+                                                <option value="8">8 Rooms</option>
+                                                <option value="9">9 Rooms</option>
+                                                <option value="10">10 Rooms</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+                                            <label for="inputAdult">Adult</label>
+                                            <select name="adult" class="form-control tm-select" id="inputAdult">
+                                                <option value="1" selected>1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+
+                                            <label for="inputChildren">Children</label>
+                                            <select name="children" class="form-control tm-select" id="inputChildren">
+                                                <option value="0" selected>0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div> <!-- form-row -->
+                               <div class="form-row tm-search-form-row">
+
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+                                        <label for="inputCheckIn">Check In Date</label>
+                                        <input name="check-in" type="text" class="form-control" id="inputCheckIn"
+                                            placeholder="Check In">
+                                    </div>
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+                                        <label for="inputCheckOut">Check Out Date</label>
+                                        <input name="check-out" type="text" class="form-control" id="inputCheckOut"
+                                            placeholder="Check Out">
+                                    </div>
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+                                        <label for="btnSubmit">&nbsp;</label>
+                                        <button type="submit"
+                                            class="btn btn-primary tm-btn tm-btn-search text-uppercase"
+                                            id="btnSubmit">Submit</button>
+                                    </div>
+                                </div>
+                            </form> 
+
+                        </div> <!-- row -->
+                        <div class="tm-banner-overlay"></div>
+                    </div> <!-- .container -->
+                </div> <!-- .tm-container-outer -->
+            </section>
+
+            <section class="p-5 tm-container-outer tm-bg-gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">
+                            <h2 class="text-uppercase mb-4">Your <strong>Journey</strong> is our priority</h2>
+                            <p class="mb-4">A South Asian nation synonymous with the phrase “unity in diversity,” India
+                                is a land of rich culture and heritage. It’s known for its varied geographical terrain,
+                                historical monuments, languages, cuisines, religions, festivals, and so much more! From
+                                north to south and east to west, there is plenty to see and experience here, and you can
+                                do so with Holidify’s numerous India tour packages that are fit for all.</p>
+                            <a href="#" class="text-uppercase btn-primary tm-btn">Continue explore</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="tm-container-outer" id="tm-section-2">
+                <section class="tm-slideshow-section">
+                    <div class="tm-slideshow">
+                        <img src="goa2.jpg" alt="Image">
+                        <img src="goa.jpeg" alt="Image">
+                        <img src="goa1.jpg" alt="Image">
+                    </div>
+                    <div class="tm-slideshow-description tm-bg-primary">
+                        <h2 class="">Goa</h2>
+                        <p>
+                        <h6>The state of Goa, in India, is famous for its beaches and places of worship. Tourism is its
+                            primary industry, and is generally focused on the coastal areas of Goa, with decreased
+                            tourist activity inland.</h6>
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/Goa" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Continue Reading</a>
+                    </div>
+                </section>
+                <section class="clearfix tm-slideshow-section tm-slideshow-section-reverse">
+
+                    <div class="tm-right tm-slideshow tm-slideshow-highlight">
+                        <img src="delhi1.jpg" alt="Image">
+                        <img src="delhi2.jpg" alt="Image">
+                        <img src="delhi3.jpg" alt="Image">
+                    </div>
+
+                    <div class="tm-slideshow-description tm-slideshow-description-left tm-bg-highlight">
+                        <h2 class="">Delhi</h2>
+                        <p>
+                        <h6>New Delhi is best known as the location of India's national government. New Delhi has great
+                            historical significance as it was home to powerful people, such as the Pāṇḍavas and the
+                            Mughals. The city has many historical monuments and tourist attractions as well as lively
+                            marketplaces and great food, such as chaat.</h6>
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/Delhi" class="text-uppercase tm-btn tm-btn-white tm-btn-white-highlight">Continue
+                            Reading</a>
+                    </div>
+
+                </section>
+                <section class="tm-slideshow-section">
+                    <div class="tm-slideshow">
+                        <img src="shimla1.jpg" alt="Image">
+                        <img src="shimla2.jpg" alt="Image">
+                        <img src="shimla3.jpg" alt="Image">
+                    </div>
+                    <div class="tm-slideshow-description tm-bg-primary">
+                        <h2 class="">Shimla</h2>
+                        <p>
+                        <h6>Shimla is the famous hill station in Himachal Pradesh, also the capital of Himachal Pradesh
+                            located at an altitude of 2276m</h6>
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/Shimla" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Continue Reading</a>
+                    </div>
+                </section>
+            </div>
+            <div class="tm-container-outer" id="tm-section-3">
+                <ul class="nav nav-pills tm-tabs-links">
+                    <li class="tm-tab-link-li">
+                        <a href="#1a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/north-america.png" alt="Image" class="img-fluid">
+                            Maharashtra
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#2a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/south-america.png" alt="Image" class="img-fluid">
+                            Kerala
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#3a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/europe.png" alt="Image" class="img-fluid">
+                            Punjab
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#4a" data-toggle="tab" class="tm-tab-link active"><!-- Current Active Tab -->
+                            <img src="img/asia.png" alt="Image" class="img-fluid">
+                            Rajastan
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#5a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/africa.png" alt="Image" class="img-fluid">
+                            Gujrat
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#6a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/australia.png" alt="Image" class="img-fluid">
+                            Uttarakhand
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#7a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/antartica.png" alt="Image" class="img-fluid">
+                            Utter Pradesh
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content clearfix">
+
+                    <!-- Tab 1 -->
+                    <div class="tab-pane fade" id="1a">
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="mumbai.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Mumbai</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Mumbai (formerly called Bombay) is a densely populated city
+                                        on India’s west coast. A financial center, it's India's largest city. On the
+                                        Mumbai Harbour waterfront stands the iconic Gateway of India stone arch, built
+                                        by the British Raj in 1924. Offshore, nearby Elephanta Island holds ancient cave
+                                        temples dedicated to the Hindu god Shiva. The city's also famous as the heart of
+                                        the Bollywood film industry</p>
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Mumbai" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price"></p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="mahabaleshwar.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Mahabaleshwar</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Mahabaleshwar is a hill station in India's forested Western
+                                        Ghats range, south of Mumbai. It features several elevated viewing points, such
+                                        as Arthur’s Seat. West of here is centuries-old Pratapgad Fort, perched atop a
+                                        mountain spur. East, Lingmala Waterfall tumbles off a sheer cliff. Colorful
+                                        boats dot Venna Lake, while 5 rivers meet at Panch Ganga Temple to the north.
+                                    </p>
+                                </div>
+                                <div id="preload-hover-img"></div>
+                                <a href="https://en.wikipedia.org/wiki/Mahabaleshwar" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price"></p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="lonavala.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Lonavala</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Lonavala is a hill station surrounded by green valleys in
+                                        western India near Mumbai. The Karla Caves and the Bhaja Caves are ancient
+                                        Buddhist shrines carved out of the rock. They feature massive pillars and
+                                        intricate relief sculptures. South of the Bhaja Caves sits the imposing Lohagad
+                                        Fort, with its 4 gates. West of here is Bhushi Dam, where water overflows onto a
+                                        set of steps during rainy season.</p>
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Lonavala" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price"></p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="matheran.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Matheran</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Matheran is a hill station, near Mumbai, in the west Indian
+                                        state of Maharashtra. It’s known for its mild climate and well-preserved
+                                        colonial architecture. Motor vehicles are banned and many visitors arrive by
+                                        narrow-gauge railway on the 1907 Neral–Matheran Toy Train. The Panorama Point
+                                        lookout offers views across the mountains of the Western Ghats. Louisa Point has
+                                        views of waterfalls and the ancient Prabal Fort.</p>
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Matheran" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                    </div> <!-- tab-pane -->
+
+                    <!-- Tab 2 -->
+                    <div class="tab-pane fade" id="2a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="alleppey.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Alleppey</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Alappuzha (or Alleppey) is a city on the Laccadive Sea in
+                                        the southern Indian state of Kerala. It's best known for houseboat cruises along
+                                        the rustic Kerala backwaters, a network of tranquil canals and lagoons.
+                                        Alappuzha Beach is the site of the 19th-century Alappuzha Lighthouse. The city's
+                                        Mullakkal Temple features a traditional design. Punnamada Lake's snake boat
+                                        races are a well-known annual event.</p>
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Alappuzha" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price"></p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="munnar.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Munnar</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Munnar is a town in the Western Ghats mountain range in
+                                        India’s Kerala state. A hill station and former resort for the British Raj
+                                        elite, it's surrounded by rolling hills dotted with tea plantations established
+                                        in the late 19th century. Eravikulam National Park, a habitat for the endangered
+                                        mountain goat Nilgiri tahr, is home to the Lakkam Waterfalls, hiking trails and
+                                        2,695m-tall Anamudi Peak.</p>
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Munnar" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price"></p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="kumarakom.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">kumarakom</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Kumarakom is a village on Vembanad Lake in the backwaters of
+                                        Kerala, southern India. It’s laced with canals, where houseboats ply the waters.
+                                        Kumarakom Bird Sanctuary is home to many species including cuckoos and Siberian
+                                        storks. Nearby, the Bay Island Driftwood Museum displays wooden sculptures. In
+                                        the lake, Pathiramanal Island is a haven for rare migratory birds. Ancient
+                                        Thazhathangady Mosque is east of Kumarakom.</p>
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Kumarakom" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price"></p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="kochi.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Kochi</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Kochi (also known as Cochin) is a city in southwest India's
+                                        coastal Kerala state. It has been a port since 1341, when a flood carved out its
+                                        harbor and opened it to Arab, Chinese and European merchants. Sites reflecting
+                                        those influences include Fort Kochi, a settlement with tiled colonial bungalows
+                                        and diverse houses of worship. Cantilevered Chinese fishing nets, typical of
+                                        Kochi, have been in use for centuries.</p>
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Kochi" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price"></p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                    </div> <!-- tab-pane -->
+
+                    <!-- Tab 3 -->
+                    <div class="tab-pane fade" id="3a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="amritsar.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Amritsar</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Amritsar is a city in the northwestern Indian state of
+                                        Punjab, 28 kilometers from the border with Pakistan. At the center of its walled
+                                        old town, the gilded Golden Temple (Harmandir Sahib) is the holiest gurdwara
+                                        (religious complex) of the Sikh religion. It’s at the end of a causeway,
+                                        surrounded by the sacred Amrit Sarovar tank (lake), where pilgrims bathe.</p>
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Amritsar" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price"></p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="chandigarh.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Chandigarh</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Chandigarh, the capital of the northern Indian states of
+                                        Punjab and Haryana, was designed by the Swiss-French modernist architect, Le
+                                        Corbusier. His buildings include the Capitol Complex with its High Court,
+                                        Secretariat and Legislative Assembly, as well as the giant Open Hand Monument.
+                                        The nearby Rock Garden is a park featuring sculptures made of stones, recycled
+                                        ceramics and industrial relics.</p>
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Chandigarh" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price"></p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="ludhiana.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Ludhiana</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Ludhiana is a large industrial city in the north Indian
+                                        state of Punjab. The Punjab Agricultural University is home to the Museum of
+                                        Rural Life, which displays pottery, musical instruments and traditional Punjabi
+                                        clothing. Nearby, leafy Nehru Rose Garden features ornamental fountains and more
+                                        than one thousand different rose varieties. To the north, Maharaja Ranjit Singh
+                                        War Museum documents Punjabi military history.</p>
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Ludhiana" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price"></p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="jalandhar.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">jalandhar</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Jalandhar is an ancient city in the north Indian state of
+                                        Punjab. It’s home to Devi Talab Mandir, a centuries-old Hindu temple dedicated
+                                        to the goddess Durga, with a tank considered sacred by devotees. The whitewashed
+                                        Gurdwara Chhevin Patshahi is a place of worship for Sikhs. To the southeast lies
+                                        St. Mary’s Cathedral, a modern building with Punjabi architectural elements, 2
+                                        domed towers and a pond.</p>
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Jalandhar" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price"></p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                    </div> <!-- tab-pane -->
+
+                    <!-- Tab 4 -->
+                    <div class="tab-pane fade show active" id="4a">
+                        <!-- Current Active Tab WITH "show active" classes in DIV tag -->
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="jodhpur.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Jodhpur</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Jodhpur is a city in the Thar Desert of the northwest Indian
+                                        state of Rajasthan. Its 15th-century Mehrangarh Fort is a former palace that’s
+                                        now a museum, displaying weapons, paintings and elaborate royal palanquins
+                                        (sedan chairs). Set on on a rocky outcrop, the fort overlooks the walled city,
+                                        where many buildings are painted the city’s iconic shade of blue.</p>
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Jodhpur" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price"></p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="jaisalmer.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Jaisalmer</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Jaisalmer is a former medieval trading center and a princely
+                                        state in the western Indian state of Rajasthan, in the heart of the Thar Desert.
+                                        Known as the "Golden City," it's distinguished by its yellow sandstone
+                                        architecture. Dominating the skyline is Jaisalmer Fort, a sprawling hilltop
+                                        citadel buttressed by 99 bastions. Behind its massive walls stand the ornate
+                                        Maharaja's Palace and intricately carved Jain temples.</p>
+                                </div>
+                                <div id="preload-hover-img"></div>
+                                <a href="https://en.wikipedia.org/wiki/Jaisalmer" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price"></p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="bikaner.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Bikaner</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Bikaner is a city in the north Indian state of Rajasthan,
+                                        east of the border with Pakistan. It's surrounded by the Thar Desert. The city
+                                        is known for the 16th-century Junagarh Fort, a huge complex of ornate buildings
+                                        and halls. Within the fort, the Prachina Museum displays traditional textiles
+                                        and royal portraits. Nearby, the Karni Mata Temple is home to many rats
+                                        considered sacred by Hindu devotees.</p>
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Bikaner" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price"></p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="jaipur.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Jaipur</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Jaipur is the capital of India’s Rajasthan state. It evokes
+                                        the royal family that once ruled the region and that, in 1727, founded what is
+                                        now called the Old City, or “Pink City” for its trademark building color. At the
+                                        center of its stately street grid (notable in India) stands the opulent,
+                                        colonnaded City Palace complex. With gardens, courtyards and museums, part of it
+                                        is still a royal residence.</p>
+                                </div>
+                                <a href="" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price"></p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                    </div> <!-- tab-pane -->
+
+                    <!-- Tab 5 -->
+                    <div class="tab-pane fade" id="5a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="ahemdabad.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Ahemdabad</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Ahmedabad, in western India, is the largest city in the
+                                        state of Gujarat. The Sabarmati River runs through its center. On the western
+                                        bank is the Gandhi Ashram at Sabarmati, which displays the spiritual leader’s
+                                        living quarters and artifacts. Across the river, the Calico Museum of Textiles,
+                                        once a cloth merchant's mansion, has a significant collection of antique and
+                                        modern fabrics.</p>
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Ahmedabad" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price"></p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="surat.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Surat</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Surat is a large city beside the Tapi River in the west
+                                        Indian state of Gujarat. Once known for silk weaving, Surat remains a commercial
+                                        center for textiles, and the New Textile Market area is lined with fabric shops.
+                                        Overlooking the river, Surat Castle was built in the 1500s to defend the city
+                                        against Portuguese colonists. Nearby, the Dutch, Armenian and English cemeteries
+                                        contain elaborate colonial-era tombs.</p>
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Surat" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price"></p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="vadodara.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Vadodara</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Vadodara, also known as Baroda, is a major city in the
+                                        Indian state of Gujarat. It serves as the administrative headquarters of the
+                                        Vadodara district and is situated on the banks of the Vishwamitri River, 141
+                                        km from the state capital of Gandhinagar.</p>
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Vadodara" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price"></p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="rajkot.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Rajkot</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">
+                                        Rajkot is a city in the western Indian state of Gujarat. In central Jubilee
+                                        Garden are the Lang Library, with Gujarati literature, and the Watson
+                                        Museum, with paintings and artifacts documenting British colonial rule. Kaba
+                                        Gandhi No Delo, the house where Mahatma Gandhi spent part of his childhood,
+                                        displays photos of the Indian leader and his belongings. The Rotary Dolls
+                                        Museum exhibits dolls from around the world.</p>
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Rajkot" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price"></p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                    </div> <!-- tab-pane -->
+
+                    <!-- Tab 6 -->
+                    <div class="tab-pane fade" id="6a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="chardham.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Chardham</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Char Dham v t e Puri Rameswaram Dwarka Badrinath The Char
+                                        Dham, also rendered the Chatur Dhama is a set of four pilgrimage sites in India.
+                                        It is believed that visiting these sites helps achieve moksha. The four Dhams
+                                        are, Badrinath, Dwarka, Puri and Rameswaram.</p>
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Char_Dham" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price"></p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="dehradun.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Dehradun</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Dehradun is the capital of the Indian state of Uttarakhand,
+                                        near the Himalayan foothills. At its core is the 6-sided Ghanta Ghar clock
+                                        tower. To the southwest is Paltan Bazaar, a busy shopping area. Just east is the
+                                        Sikh temple Gurdwara Nanaksar, topped with ornate white and golden domes. In
+                                        Clement Town to the city’s southwest, Mindrolling Monastery is a Tibetan
+                                        Buddhist center with shrine rooms in its Great Stupa.</p>
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Dehradun" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price"></p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="utterkashi.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Utterkashi</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Uttarkashi, meaning Kashi of the north, is a town located in
+                                        Uttarkashi district in Uttarakhand, India. Uttarkashi town is headquarters of
+                                        the district. Uttarkashi is also known as Somya Kashi. Uttarkashi is a Hindu
+                                        religious place for spiritual and adventurous tourism. Uttarkashi town is also
+                                        called as Shivnagri.</p>
+                                </div>
+
+                                <a href="https://en.wikipedia.org/wiki/Uttarkashi" class="tm-recommended-price-box">
+
+                                    <p class="tm-recommended-price"></p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="panghot.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Panghot</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Pangot is a village in the Kosiyakutoli tehsil of Nainital
+                                        district in Uttarakhand, India, and a tourist destination at a height of 6,510
+                                        feet.</p>
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Pangot" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price"></p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                    </div> <!-- tab-pane -->
+
+                    <!-- Tab 7 -->
+                    <div class="tab-pane fade" id="7a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="ayodhya.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Ayodhya</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Ayodhya
+                                        is a city situated on the banks of the Sarayu river in the Indian state of Uttar
+                                        Pradesh. It is the administrative headquarters of the Ayodhya district as well
+                                        as the Ayodhya division of Uttar Pradesh, India.Ayodhya city is
+                                        administered by the Ayodhya Municipal Corporation, the governing civic body of
+                                        the city.</p>
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Ayodhya" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price"></p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="tajmahal.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Taj Mahal</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">The Taj Mahal is an ivory-white marble mausoleum on the
+                                        right bank of the river Yamuna in Agra, Uttar Pradesh, India. It was
+                                        commissioned in 1631 by the fifth Mughal emperor, Shah Jahan to house the tomb
+                                        of his favourite wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan
+                                        himself</p>
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Taj_Mahal" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price"></p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="varanasi.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Varanasi</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Varanasi is a city in the northern Indian state of Uttar
+                                        Pradesh dating to the 11th century B.C. Regarded as the spiritual capital of
+                                        India, the city draws Hindu pilgrims who bathe in the Ganges River’s sacred
+                                        waters and perform funeral rites. Along the city's winding streets are some
+                                        2,000 temples, including Kashi Vishwanath, the “Golden Temple,” dedicated to the
+                                        Hindu god Shiva.</p>
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Varanasi" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price"></p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="vrindavan.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Vrindavan</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Vrindavan is a holy town in Uttar Pradesh, northern India.
+                                        The Hindu deity Krishna is said to have spent his childhood here. It’s home to
+                                        temples, many dedicated to Krishna and his lover, the deity Radha. At Banke
+                                        Bihari Temple, the curtain in front of Krishna’s statue is opened and closed
+                                        every few minutes. At Radha Raman Temple, a gold plate beside Krishna signifies
+                                        Radha. Prem Mandir is a huge white marble temple.</p>
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Vrindavan" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price"></p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <a href="https://www.google.com/travel/explore?g2lb=2502548,2503771,2503781,4258168,4270442,4284970,4291517,4306835,4429191,4597339,4757164,4814050,4850738,4864715,4874190,4886480,4893075,4924070,4965990,4985712,4990494,72248281,72253254,72266483,72266484,72271797,72281254&hl=en-IN&gl=in&ssta=1&tfs=CB4QAxohahEIAxINL2cvMTFidzgzZzltcnIMCAQSCC9tLzAzcmswGiFqDAgEEggvbS8wM3JrMHIRCAMSDS9nLzExYnc4M2c5bXJAAUgBUgNJTlJwApgBAQ&curr=INR&sa=X&ved=2ahUKEwiHqLGcveD_AhX0RmwGHY5eAxcQ7MIGegQICRAT"
+                            class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                    </div> <!-- tab-pane -->
+                </div>
+            </div>
+
+            <div class="tm-container-outer tm-position-relative" id="tm-section-4">
+                <div id="google-map"></div>
+                <form action="index.html" method="post" class="tm-contact-form">
+                    <div class="form-group tm-name-container">
+                        <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name"
+                            required />
+                    </div>
+                    <div class="form-group tm-email-container">
+                        <input type="email" id="contact_email" name="contact_email" class="form-control"
+                            placeholder="Email" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="contact_subject" name="contact_subject" class="form-control"
+                            placeholder="Subject" required />
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contact_message" name="contact_message" class="form-control" rows="9"
+                            placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary tm-btn-primary tm-btn-send text-uppercase">Send Message
+                        Now</button>
+                </form>
+            </div> <!-- .tm-container-outer -->
+
+            <footer class="tm-container-outer">
+                <p class="mb-0">Copyright © <span class="tm-current-year">2018</span> Your Company
+
+                    . Designed by <a rel="nofollow" href="http://www.google.com/+templatemo" target="_parent">Template
+                        Mo</a></p>
+            </footer>
+        </div>
+    </div> <!-- .main-content -->
+
+    <!-- load JS files -->
+    <script src="js/jquery-1.11.3.min.js"></script> <!-- jQuery (https://jquery.com/download/) -->
+    <script src="js/popper.min.js"></script> <!-- https://popper.js.org/ -->
+    <script src="js/bootstrap.min.js"></script> <!-- https://getbootstrap.com/ -->
+    <script src="js/datepicker.min.js"></script> <!-- https://github.com/qodesmith/datepicker -->
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+    <script src="slick/slick.min.js"></script> <!-- http://kenwheeler.github.io/slick/ -->
+    <script src="js/jquery.scrollTo.min.js"></script> <!-- https://github.com/flesler/jquery.scrollTo -->
+    <script>
+        /* Google Maps
+        ------------------------------------------------*/
+        var map = '';
+        var center;
+
+        function initialize() {
+            var mapOptions = {
+                zoom: 16,
+                center: new google.maps.LatLng(37.769725, -122.462154),
+                scrollwheel: false
+            };
+
+            map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
+
+            google.maps.event.addDomListener(map, 'idle', function () {
+                calculateCenter();
+            });
+
+            google.maps.event.addDomListener(window, 'resize', function () {
+                map.setCenter(center);
+            });
+        }
+
+        function calculateCenter() {
+            center = map.getCenter();
+        }
+
+        function loadGoogleMap() {
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDVWt4rJfibfsEDvcuaChUaZRS5NXey1Cs&v=3.exp&sensor=false&' + 'callback=initialize';
+            document.body.appendChild(script);
+        }
+
+        /* DOM is ready
+        ------------------------------------------------*/
+        $(function () {
+
+            // Change top navbar on scroll
+            $(window).on("scroll", function () {
+                if ($(window).scrollTop() > 100) {
+                    $(".tm-top-bar").addClass("active");
+                } else {
+                    $(".tm-top-bar").removeClass("active");
+                }
+            });
+
+            // Smooth scroll to search form
+            $('.tm-down-arrow-link').click(function () {
+                $.scrollTo('#tm-section-search', 300, { easing: 'linear' });
+            });
+
+            // Date Picker in Search form
+            var pickerCheckIn = datepicker('#inputCheckIn');
+            var pickerCheckOut = datepicker('#inputCheckOut');
+
+            // Update nav links on scroll
+            $('#tm-top-bar').singlePageNav({
+                currentClass: 'active',
+                offset: 60
+            });
+
+            // Close navbar after clicked
+            $('.nav-link').click(function () {
+                $('#mainNav').removeClass('show');
+            });
+
+            // Slick Carousel
+            $('.tm-slideshow').slick({
+                infinite: true,
+                arrows: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+
+            loadGoogleMap();                                       // Google Map                
+            $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright           
+        });
+
+    </script>
+
+</body>
+
+</html>
