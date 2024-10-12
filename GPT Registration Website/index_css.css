@@ -1,0 +1,29 @@
+.parent {
+    border: 3px solid #fff;
+    margin: 1rem;
+    padding: 20px;
+    text-align: center;
+}
+
+.child {
+    display: inline-block;
+    padding: 1rem 1rem;
+    border: 1px;
+    vertical-align: top;
+    background-color: rgb(243, 247, 248);
+}
+
+.parent1 {
+    border: 3px solid #fff;
+    margin: 1rem;
+    padding: 20px;
+    text-align: left;
+}
+
+.child1 {
+    display: inline-block;
+    padding: 1rem 1rem;
+    border: 1px;
+    vertical-align: top;
+    background-color: rgb(243, 247, 248);
+}
