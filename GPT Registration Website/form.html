@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Registration Form</title></head>
+    <body>
+        <h1><center>Registration Form</center></h1>
+        <form method="get" action="process.html">
+            Enter Name: <input type="text" placeholder="Last Name" name="name" required>
+            <input type="text" placeholder="First Name" name="name" required>
+            <input type="text" placeholder="Middle Name" name="name" required><br>
+            Gender: <input type="radio" id="gender" name="gender" value="male"/ required> Male
+                    <input type="radio" id="gender" name="gender" value="female"/ required> Female <br>
+            <label for="birthdate">Date of Birth: </label>
+            <input type="date" id="birthdate" name="birthdate" required><br><br>
+            Email: <input type="email" id="email" name="email" required><br>
+            SSC Marksheet: <input type="file" id="marksheet" name="marksheet" required><br>
+            Upload Photo: <input type="file" id="Photo" name="Photo" required><br><br>
+            <select name="slctCourseName" multiple size="5">
+                <option>...Select Option...</option>
+                <option value="Civil">Civil</option>
+                <option value="Computer">Computer</option>
+                <option value="IT">IT</option>
+                <option value="Chemical">Chemical</option>
+                <option value="Mechanical">Mechanical</option>
+            </select>
+            <br><br>
+            Create Username(8-15 caharacters): <input type="text" placeholder="username" id="username" name="username" minlength="8" maxlength="15" required><br>
+            Create Password(8-15 caharacters): <input type="password" placeholder="Password" id="password" name="password" minlength="8" maxlength="15" required><br>
+            Mob No.: <input type="tel" placeholder="mob no" id="mob no" name="mob no" required>
+            <br><br>
+            <input type="submit" name="frmsubmit">
+            <br>
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>
