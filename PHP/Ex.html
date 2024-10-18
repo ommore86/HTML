@@ -1,0 +1,151 @@
+ <html>
+    <head>
+        <title>My First Website</title>
+    </head>
+    <body>
+        <center> <h1> Sumago Infotech Pvt. Ltd. </h1></center>
+        <hr>
+        <!--<center><a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="team.html">Team</a>
+        <a href="service.html">Service</a>
+        <a href="contact.html">Contact</a></center>
+        -->
+
+        <center>
+            <form name="stud_form" onsubmit="return validateform()">
+            <table border="3" cellspacing="10" cellpadding="10">
+                
+            <h1>Registration Form</h1>
+            <tr>
+                <th>Name:</th>
+                <td><input type="text" name="stud_name" placeholder="Enter your Name" pattern="[A-Za-z]{1,32}"></td>
+            </tr>
+
+            <tr>
+            <th>Contact:</th>
+            <td><input type="mobile" name="stud_contact" placeholder="Enter your Contact" pattern="[789][0-9]{9}"></td>
+            </tr>
+
+            <tr>
+            <th>Email:</th>
+            <td><input type="email" name="stud_email" placeholder="Enter your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></td>
+            </tr>
+
+            <tr>
+            <th>Address:</th>
+            <td><textarea rows="5" cols="10" name="stud_address"></textarea></td>
+            </tr>
+
+            <tr>
+            <th>Gender</th>
+            <td><input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female</td>
+            </tr>
+
+            <tr>
+            <th>City</th>
+           <td><select name="std_city">
+                <option value="">Select City</option>
+                <option value="Nashik">Nashik</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Goa">Goa</option>
+            </select></td>
+            </tr>
+
+            <tr>
+            <th>Language</th>
+            <td><input type="checkbox" name="lang[]" value="English">English
+            <input type="checkbox" name="lang[]" value="Hindi">Hindi
+            <input type="checkbox" name="lang[]" value="Marathi">Marathi</td>
+            </tr>
+
+            <tr>
+           <th>Date of Birth</th>
+            <td><input type="date" name="stud_dob"></td>
+            </tr>
+
+            <tr>
+            <th>Username:</th>
+            <td><input type="text" name="stud_username" placeholder="Enter Username"></td>
+            </tr>
+
+            <tr>
+            <th>Password:</th>
+            <td><input type="password"  name="stud_password" placeholder="Enter Password" pattern=".{8,}"></td>
+            </tr>
+
+            <tr>
+            <th>Upload Photo</th>
+            <td><input type="file" name="photo"></td>
+            </tr>
+
+            <th><input type="submit" name="submit" value="Submit"></th>
+           <td> <input type="reset" name="reset" value="Reset"></td>
+            </table>
+
+            <script>
+            function validateform(){
+                var a = document.forms["stud_form"]["stud_name"].value
+                if(a==''){
+                    alert("Please enter your name")
+                }
+
+                var a = document.forms["stud_form"]["stud_contact"].value
+                if(a==''){
+                    alert("Please enter your contact")
+                }
+
+                var a = document.forms["stud_form"]["stud_email"].value
+                if(a==''){
+                    alert("Please enter your email")
+                }
+
+                var a = document.forms["stud_form"]["stud_address"].value
+                if(a==''){
+                    alert("Please enter your address")
+                }
+
+                var a = document.forms["stud_form"]["gender"].value
+                if(a==''){
+                    alert("Please enter your gender")
+                }
+
+                var a = document.forms["stud_form"]["std_city"].value
+                if(a==''){
+                    alert("Please enter your city")
+                }
+
+                var checkboxes = document.forms["stud_form"]["lang[]"];
+    var checked = false;
+    for (var i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i].checked) {
+            checked = true;
+            break;
+        }
+    }
+    if (!checked) {
+        alert("Please select at least one language");
+        return false;
+    }
+
+                var a = document.forms["stud_form"]["stud_dob"].value
+                if(a==''){
+                    alert("Please enter your date of birth")
+                }
+
+                var a = document.forms["stud_form"]["stud_username"].value
+                if(a==''){
+                    alert("Please enter your username")
+                }
+
+                var a = document.forms["stud_form"]["stud_password"].value
+                if(a==''){
+                    alert("Please enter your password")
+                }
+            }
+            </script>
+            </form>
+        </center>
+    </body>
+</html>

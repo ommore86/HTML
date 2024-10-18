@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head><title>Form Controls</title></head>
+<body>
+    <form method="GET" action="form_controls_php.php">
+        <label for="name">Name: </label>
+        <input type="text" name="name"><br/>
+        
+        <label for="gender">Gender: </label>
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Female<br/>
+        
+        <label for="gen">Gender: </label>
+        <select name="gen">
+            <option disabled selected>Select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <br/>
+
+        <label for="subj">Subjects: </label>
+        <input type="checkbox" name="eec" value="EEC">EEC
+        <input type="checkbox" name="bec" value="BEC">BEC
+        <input type="checkbox" name="maths" value="MATHS">MATHS
+        <input type="checkbox" name="pic" value="PIC">PIC<br/>
+
+        <label for="address">Address: </label>
+        <textarea name="address" rows="5" cols="30">
+        </textarea><br/>
+
+        <!-- <input type="hidden" name="uid" value="101"> -->
+
+        <input type="submit" name="submit">
+    </form>
+</body>
+</html>
